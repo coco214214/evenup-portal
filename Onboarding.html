@@ -159,7 +159,7 @@
       submittedAt: new Date().toISOString()
     };
 
-    const res = await fetch("https://evenup-portal.vercel.app/api/submit-onboarding", {
+    const res = await fetch("https://submissions-evenup.vercel.app/api/submissions", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(payload)
@@ -211,11 +211,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
-  <script>
-  async function submitToEvenup() {
-    alert("Submit function is running — now connect it to your backend.");
-  }
-</script>
+  
 
 
 </body>
